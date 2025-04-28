@@ -1,0 +1,94 @@
+<!--Booking page
+By Fauzia Bensliman , 2022
+-->
+<!DOCTYPE html>
+<html lang="sv">
+
+<!-- Mirrored from studenter.miun.se/~fabe2100/writeable/dt173g/projekt_webbplats/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Apr 2025 05:26:01 GMT -->
+<meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" href="css/sass.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&amp;family=Cormorant+Garamond&amp;family=Dancing+Script&amp;display=swap"
+        rel="stylesheet">
+
+    <title>PIZZA UNO</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="images/pizza_uno_logo.svg" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">START</a></li>
+            <li><a href="menu.html">MENY</a></li>
+            <li><a href="booking.html">BOKNING</a></li>
+            <li><a href="about.html">OM OSS</a></li>
+
+        </ul>
+    </nav>
+    <div class="picture-booking">
+    <img class="img-booking" src="images/pizza_boka_big.jpg" alt="pizza" style="width:100%; height:auto">
+    <div class="centered">
+        <h1>Bokning</h1>
+    </div>
+    </div>
+    <section class="booking-div">
+        <div class="booking">
+            <!--Error msg for Inputs fields-->
+            <span id="error"></span>
+
+            <span id="info"></span>
+            <form id="bookingForm">
+                <h1>Boka Bord Hos Oss Online!</h1><br>
+                <label for="date">Datum:</label><br>
+                <input type="date" name="date" id="date">
+                <br>
+                <label for="persons">Antal gäster:</label><br>
+                <input type="number" name="persons" id="persons">
+                <br>
+                <label for="time">Tid:</label><br>
+                <input type="time" name="time" id="time">
+                <br>
+                <label for="name">Namn:</label><br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="phone">Telefonnr:</label><br>
+                <input type="text" name="phone" id="phone">
+                <br>
+                <label for="mail">Email:</label><br>
+                <input type="text" name="mail" id="mail">
+                <br>
+
+                <input type="submit" value="Reservera" id="submit">
+            </form>
+        </div>
+        <ul id="bookings">
+
+        </ul>
+    </section>
+    <footer>
+        <span>Tel : 05 24 42 39 39<br>
+            E-mail : contact@vita-nova.com<br>
+            Adresse : Vita Nova, 36, Rue Ibn Aicha
+            40000 Gueliz Marrakech, Maroc<br><br>
+            <br>
+            2022 Pizza Uno Restaurant
+        </span>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from studenter.miun.se/~fabe2100/writeable/dt173g/projekt_webbplats/booking.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Apr 2025 05:26:02 GMT -->
+</html>
